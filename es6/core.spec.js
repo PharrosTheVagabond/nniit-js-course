@@ -36,6 +36,12 @@ describe('es6', () => {
         });
     });
 
+    describe("#fooBar", () => {
+        it('Создается массив длиной > 15', () => {
+            assert.deepEqual(core.fooBar(19), [1, 2, "Foo", 4, "Bar", "Foo", 7, 8, "Foo", "Bar", 11, "Foo", 13, 14, "FooBar", 16, 17, "Foo", 19]);
+        });
+    });
+
     describe('#Dictionary', () => {
         it('экземпляр класса создается', () => {
             const dic = new core.Dictionary();

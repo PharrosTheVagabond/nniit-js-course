@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Task №2</title>
+</head>
+
+<body>
+    <input pattern = \d+(\.\d+)? id = inputFirst oninput = calculate()>
+    <select id = operation onchange = calculate()>
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+        <option>/</option>
+    </select>
+    <input pattern = \d+(\.\d+)? id = inputSecond oninput = calculate()>
+    <button id = calculate onclick = calculate()>=</button>
+    <output id = outputResult></output>
+    <script src = "index.js"></script>
+</body>
